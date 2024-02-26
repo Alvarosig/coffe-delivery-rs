@@ -7,15 +7,15 @@ export function Header() {
       <img src={logo} alt="Logo da Coffe Delivery" />
       <div className="">
         <div className="flex justify-center gap-3">
-          <div className="flex bg-purple-light px-2 py-[10px] gap-1 rounded-md">
+          <div className="flex flex-row items-center bg-purple-light px-2 py-[10px] h-[38px] gap-1 rounded-md">
             <MapPin size={22} weight="fill" className="text-purple-normal" />
             <span className="text-purple-dark">Laguna, SC</span>
           </div>
-          <div className="flex items-center bg-yellow-light p-2 rounded-md">
+          <div className="flex items-center justify-center bg-yellow-light size-[38px] p-2 rounded-md cursor-pointer">
             <ShoppingCart
               size={22}
               weight="fill"
-              className="text-yellow-dark cursor-pointer"
+              className="text-yellow-dark"
             />
           </div>
         </div>

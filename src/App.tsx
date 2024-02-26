@@ -4,10 +4,14 @@ import { MainContent } from "./components/MainContent/MainContent";
 
 export function App() {
   return (
-    <div className="max-w-[1440px] px-40 m-auto flex-col">
-      <Header />
+    <div className="m-auto">
+      <div className="max-w-[1440px] px-40 m-auto">
+        <Header />
+      </div>
       <MainContent />
-      <CoffeeItems />
+      <div className="max-w-[1440px] px-40 m-auto">
+        <CoffeeItems/>
+      </div>
     </div>
-  );
+  )
 }

@@ -3,7 +3,7 @@ import { ShoppingCart, Timer, Package, Coffee } from 'phosphor-react'
 
 export function MainContent() {
   return (
-    <main className="flex justify-between gap-14 py-24 bg-gradient-to-l from-background to-[#D9D9D9]">
+    <main className="flex justify-between gap-14 px-96 py-24 bg-gradient-to-bl from-background to-[#D9D9D9]">
       <div className="max-w-[588px] flex flex-col gap-16">
         <div className="flex flex-col gap-4">
           <h1 className="font-baloo text-5xl font-extrabold text-base-title leading-tight drop-shadow-[0_3px_1px_rgba(0,0,0,0.25)]">
@@ -14,8 +14,8 @@ export function MainContent() {
             hora
           </h2>
         </div>
-        <div className="max-w-[567px]">
-          <ul className="grid grid-cols-2 gap-y-5">
+        <div className="max-w-[567px] w-full">
+          <ul className="flex flex-row flex-wrap gap-x-10 gap-y-5">
             <li className="flex gap-3 items-center text-base-text text-base leading-tight">
               <div className="p-2 rounded-full bg-yellow-dark">
               <ShoppingCart weight="fill" className="text-background"/>
@@ -37,7 +37,7 @@ export function MainContent() {
               Entrega rápida e rastreada
             </li>
 
-            <li className="flex gap-3 items-center text-base-text text-base leading-tight">
+            <li className="flex gap-3 items-center text-base-text text-base leading-tight -ml-[6px]">
               <div className="p-2 rounded-full bg-purple-normal">
               <Coffee weight="fill" className="text-background"/>
               </div>
@@ -48,7 +48,6 @@ export function MainContent() {
       </div>
       <div>
         <img
-          className=""
           src={coffee}
           alt="Copo de café com a logo coffee delivery"
         />
