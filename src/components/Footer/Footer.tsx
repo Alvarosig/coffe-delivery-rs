@@ -41,25 +41,31 @@ export function Footer() {
           <h3 className="font-extrabold text-xl">Conecte-se</h3>
           <ul className="flex gap-2 justify-start">
             <li>
-              <LinkedinLogo
-                size={28}
-                className="cursor-pointer"
-                alt="Visite meu Linkedin"
-              />
+              <a href="https://www.linkedin.com/in/alvarosig/" target="_blank">
+                <LinkedinLogo
+                  size={28}
+                  className="cursor-pointer"
+                  alt="Visite meu Linkedin"
+                />
+              </a>
             </li>
             <li>
-              <GithubLogo
-                size={28}
-                className="cursor-pointer"
-                alt="Visite meu Github"
-              />
+              <a href="https://github.com/Alvarosig" target="_blank">
+                <GithubLogo
+                  size={28}
+                  className="cursor-pointer"
+                  alt="Visite meu Github"
+                />
+              </a>
             </li>
             <li>
-              <InstagramLogo
-                size={28}
-                className="cursor-pointer"
-                alt="Visite meu Instagram"
-              />
+              <a href="">
+                <InstagramLogo
+                  size={28}
+                  className="cursor-pointer"
+                  alt="Visite meu Instagram"
+                />
+              </a>  
             </li>
           </ul>
         </div>
@@ -77,7 +83,7 @@ export function Footer() {
             <p>Laguna, Santa Catarina</p>
             <p>88790-0000</p>
             <p className="flex items-center gap-1">
-              Email: <Envelope size={16} />
+              Email: <Envelope size={16} alt="Me mande um email"/>
               alvarosilvalg@gmail.com
             </p>
           </div>
