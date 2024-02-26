@@ -1,10 +1,7 @@
-import {
-  LinkedinLogo,
-  GithubLogo,
-  InstagramLogo,
-  Envelope,
-} from "phosphor-react"
-import logo from "../../assets/logo-coffee.png"
+import { Envelope, GithubLogo, InstagramLogo, LinkedinLogo } from 'phosphor-react';
+import { Link } from 'react-router-dom';
+
+import logo from '../../assets/logo-coffee.png';
 
 export function Footer() {
   return (
@@ -18,12 +15,10 @@ export function Footer() {
             </h3>
           </div>
           <p className="text-lg">
-            O CoffeDelivery é um sucesso brasileiro! Venha provar e se apaixone
-            pela sabor do verdadeiro café ❤. Nós oferecemos uma variedade de
-            cafés de alta qualidade, entregues diretamente na sua porta.
-            Experimente nossos serviços e descubra a diferença que o
-            CoffeDelivery pode fazer no seu dia a dia. Vá em frente e
-            experimente! ☕
+            O CoffeDelivery é um sucesso brasileiro! Nós oferecemos uma
+            variedade de cafés de alta qualidade, entregues diretamente na sua
+            porta. Experimente nossos serviços e descubra a diferença que o
+            CoffeDelivery pode fazer no seu dia a dia!☕
           </p>
         </div>
       </div>
@@ -41,31 +36,31 @@ export function Footer() {
           <h3 className="font-extrabold text-xl">Conecte-se</h3>
           <ul className="flex gap-2 justify-start">
             <li>
-              <a href="https://www.linkedin.com/in/alvarosig/" target="_blank">
+              <Link to="https://www.linkedin.com/in/alvarosig/" target="_blank">
                 <LinkedinLogo
                   size={28}
                   className="cursor-pointer"
                   alt="Visite meu Linkedin"
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://github.com/Alvarosig" target="_blank">
+              <Link to="https://github.com/Alvarosig" target="_blank">
                 <GithubLogo
                   size={28}
                   className="cursor-pointer"
                   alt="Visite meu Github"
                 />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to="">
                 <InstagramLogo
                   size={28}
                   className="cursor-pointer"
                   alt="Visite meu Instagram"
                 />
-              </a>  
+              </Link>
             </li>
           </ul>
         </div>
@@ -83,7 +78,7 @@ export function Footer() {
             <p>Laguna, Santa Catarina</p>
             <p>88790-0000</p>
             <p className="flex items-center gap-1">
-              Email: <Envelope size={16} alt="Me mande um email"/>
+              Email: <Envelope size={16} alt="Me mande um email" />
               alvarosilvalg@gmail.com
             </p>
           </div>

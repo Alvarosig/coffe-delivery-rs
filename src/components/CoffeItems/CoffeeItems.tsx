@@ -1,10 +1,12 @@
-import { Card } from './Card/Card';
+import { Card } from "./Card/Card"
 
 export function CoffeeItems() {
   return (
     <div className="flex flex-col mt-8 gap-y-[54px]">
-      <h2 className="font-baloo font-extrabold text-base-subtitle text-[32px] ">Nossos cafés</h2>
-      <div className="flex flex-wrap gap-x-8 gap-y-10 items-center justify-start"> 
+      <h2 className="font-baloo font-extrabold text-base-subtitle text-[32px] ">
+        Nossos cafés
+      </h2>
+      <div className="flex flex-wrap gap-x-8 gap-y-10 items-center justify-start">
         <Card />
       </div>
     </div>

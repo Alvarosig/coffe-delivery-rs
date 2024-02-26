@@ -1,11 +1,13 @@
-import { Minus, Plus, ShoppingCart } from "phosphor-react"
+import { Minus, Plus, ShoppingCart } from 'phosphor-react';
 
 interface BuyProps {
   price: number
 }
 
 export function Buy({ price }: BuyProps) {
-  const formatedPrice =  price.toLocaleString('pt-BR', { minimumFractionDigits: 2})
+  const formatedPrice = price.toLocaleString("pt-BR", {
+    minimumFractionDigits: 2,
+  })
 
   return (
     <div className="flex flex-row max-w-52 items-center gap-6 mt-2">
@@ -36,5 +38,5 @@ export function Buy({ price }: BuyProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }

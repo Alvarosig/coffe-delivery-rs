@@ -1,5 +1,6 @@
-import { MapPin, ShoppingCart } from 'phosphor-react'
-import logo from '../../assets/logo-coffee.svg'
+import { MapPin, ShoppingCart } from 'phosphor-react';
+
+import logo from '../../assets/logo-coffee.svg';
 
 export function Header() {
   return (
@@ -21,5 +22,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }

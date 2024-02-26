@@ -1,5 +1,6 @@
-import coffee from "../../assets/coffee.png";
-import { ShoppingCart, Timer, Package, Coffee } from 'phosphor-react'
+import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react';
+
+import coffee from '../../assets/coffee.png';
 
 export function MainContent() {
   return (
@@ -18,28 +19,28 @@ export function MainContent() {
           <ul className="flex flex-row flex-wrap gap-x-10 gap-y-5">
             <li className="flex gap-3 items-center text-base-text text-base leading-tight">
               <div className="p-2 rounded-full bg-yellow-dark">
-              <ShoppingCart weight="fill" className="text-background"/>
+                <ShoppingCart weight="fill" className="text-background" />
               </div>
               Compra simples e segura
             </li>
-            
+
             <li className="flex gap-3 items-center text-base-text text-base leading-tight">
               <div className="p-2 rounded-full bg-base-text">
-              <Package weight="fill" className="text-background"/>
+                <Package weight="fill" className="text-background" />
               </div>
               Embalagem mantém o café intacto
             </li>
 
             <li className="flex gap-3 items-center text-base-text text-base leading-tight">
               <div className="p-2 rounded-full bg-yellow-normal">
-              <Timer weight="fill" className="text-background"/>
+                <Timer weight="fill" className="text-background" />
               </div>
               Entrega rápida e rastreada
             </li>
 
             <li className="flex gap-3 items-center text-base-text text-base leading-tight -ml-[6px]">
               <div className="p-2 rounded-full bg-purple-normal">
-              <Coffee weight="fill" className="text-background"/>
+                <Coffee weight="fill" className="text-background" />
               </div>
               O café chega fresquinho até você
             </li>
@@ -47,11 +48,8 @@ export function MainContent() {
         </div>
       </div>
       <div>
-        <img
-          src={coffee}
-          alt="Copo de café com a logo coffee delivery"
-        />
+        <img src={coffee} alt="Copo de café com a logo coffee delivery" />
       </div>
     </main>
-  );
+  )
 }

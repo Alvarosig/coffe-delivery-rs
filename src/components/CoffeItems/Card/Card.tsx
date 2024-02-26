@@ -1,5 +1,5 @@
-import { Buy } from "./Buy/Buy";
-import { card } from "../../../data/cards.ts";
+import { card } from "../../../data/cards.ts"
+import { Buy } from "./Buy/Buy"
 
 export function Card() {
   return (
@@ -19,14 +19,14 @@ export function Card() {
             </div>
             <div className="flex flex-col justify-center items-center pt-20">
               <div className="flex gap-1">
-              {card.labels.map((label) => (
-                <span
-                  key={label.id}
-                  className="font-sans font-bold text-[10px] text-yellow-dark px-2 py-1 text-center bg-yellow-light rounded-full leading-tight my-4"
-                >
-                  {label.text}
-                </span>
-              ))}
+                {card.labels.map((label) => (
+                  <span
+                    key={label.id}
+                    className="font-sans font-bold text-[10px] text-yellow-dark px-2 py-1 text-center bg-yellow-light rounded-full leading-tight my-4"
+                  >
+                    {label.text}
+                  </span>
+                ))}
               </div>
 
               <div className="flex flex-col gap-8 items-center">
@@ -42,8 +42,8 @@ export function Card() {
               </div>
             </div>
           </div>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
