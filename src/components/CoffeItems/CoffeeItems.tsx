@@ -6,7 +6,6 @@ export function CoffeeItems() {
       <h2 className="font-baloo font-extrabold text-base-subtitle text-[32px] ">Nossos cafés</h2>
       <div className="flex flex-wrap gap-x-8 gap-y-10 items-center justify-start"> 
         <Card />
-        <Card />
       </div>
     </div>
   )
