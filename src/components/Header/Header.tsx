@@ -16,12 +16,13 @@ export function Header() {
             <span className="text-purple-dark">Laguna, SC</span>
           </div>
           <Link to="/checkout">
-            <div className="flex items-center justify-center bg-yellow-light size-[38px] p-2 rounded-md cursor-pointer">
+            <div className="flex items-center justify-center bg-yellow-light size-[38px] p-2 rounded-md cursor-pointer absolute">
               <ShoppingCart
                 size={22}
                 weight="fill"
                 className="text-yellow-dark"
               />
+              <span className="absolute -top-3 -right-3 font-sans text-xs text-white px-2 py-1 rounded-full bg-yellow-dark">2</span>
             </div>
           </Link>
         </div>
