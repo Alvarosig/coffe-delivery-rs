@@ -3,7 +3,7 @@ import { Buy } from "./Buy/Buy"
 
 export function Card() {
   return (
-    <div className="flex flex-wrap gap-x-8 gap-y-10 mb-14">
+    <div className="flex flex-wrap gap-x-8 gap-y-10 mb-14 max-lg:justify-center">
       {card.map((card) => {
         return (
           <div

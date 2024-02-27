@@ -3,7 +3,7 @@ import delivery from '../../assets/delivery.svg'
 
 export function SucessOrder() {
   return (
-    <div className="flex flex-row justify-between items-center mt-20 mb-14">
+    <div className="flex flex-row justify-between items-center mt-20">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-1">
           <h1 className="font-baloo font-extrabold text-[32px] text-yellow-dark">
@@ -30,7 +30,7 @@ export function SucessOrder() {
                   Rua Oscar Guimarães Pinto, 40
                 </span>
               </p>
-              <p className="inline-block">Laguna- Santa Catarina, SC</p>
+              <p className="inline-block">Laguna - Santa Catarina, SC</p>
             </div>
           </div>
 
