@@ -7,7 +7,7 @@ export function FormShip() {
         id=""
         required
         placeholder="CEP"
-        className="col-start-1 col-end-2 row-span-1 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="col-start-1 col-end-2 row-span-1 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
       <input
@@ -16,7 +16,7 @@ export function FormShip() {
         id=""
         required
         placeholder="Rua"
-        className="col-start-1 col-end-4 row-span-1 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="col-start-1 col-end-4 row-span-1 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
       <input
@@ -25,7 +25,7 @@ export function FormShip() {
         id=""
         required
         placeholder="Número"
-        className="col-start-1 col-end-2 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="col-start-1 col-end-2 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
       <input
@@ -33,7 +33,7 @@ export function FormShip() {
         name=""
         id=""
         placeholder="Complemento"
-        className="col-start-2 col-end-4 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="col-start-2 col-end-4 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
       
       <input
@@ -42,7 +42,7 @@ export function FormShip() {
         id=""
         required
         placeholder="Bairro"
-        className="col-start-1 col-end-2 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="col-start-1 col-end-2 p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
       <input
@@ -51,7 +51,7 @@ export function FormShip() {
         id=""
         required
         placeholder="Cidade"
-        className="p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
       <input
@@ -60,7 +60,7 @@ export function FormShip() {
         id=""
         required
         placeholder="UF"
-        className="p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none"
+        className="p-3 bg-base-input rounded-[4px] text-sm font-normal placeholder:text-base-label shadow ring-1 ring-base-button outline-none focus:ring-yellow-dark"
       />
 
     </form>

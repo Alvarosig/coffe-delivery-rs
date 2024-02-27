@@ -3,6 +3,7 @@ import { Checkout } from './Pages/Checkout.tsx'
 import { Homepage } from './Pages/Homepage.tsx'
 import { NotFound } from './Pages/NotFound.tsx'
 import { Header } from './components/Header/Header'
+import { Sucess } from './Pages/Sucess.tsx'
 
 export function Routes() {
   const location = useLocation()
@@ -16,6 +17,10 @@ export function Routes() {
     {
       path: '/checkout',
       element: <Checkout />
+    },
+    {
+      path: '/checkout/sucess',
+      element: <Sucess/ >
     },
     {
       path: '/404',
