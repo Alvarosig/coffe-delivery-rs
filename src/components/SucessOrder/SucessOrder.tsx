@@ -3,7 +3,7 @@ import delivery from '../../assets/delivery.svg'
 
 export function SucessOrder() {
   return (
-    <div className="flex flex-row justify-between items-center mt-20">
+    <div className="flex flex-row justify-between items-center mt-20 max-[1180px]:flex-col max-[1180px]:gap-10 max-[1180px]:my-20">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-1">
           <h1 className="font-baloo font-extrabold text-[32px] text-yellow-dark">
@@ -71,6 +71,7 @@ export function SucessOrder() {
       <img
         src={delivery}
         alt="Um rapaz andando de moto realizando a entrega do pedido"
+        className="max-md: hidden"
       />
     </div>
   )

@@ -15,7 +15,7 @@ import coffee_14 from '../assets/coffe_14.png'
 
 export const card = [
   {
-    id: crypto.randomUUID(),
+    id: 1,
     img: coffee_1,
     alt: "Café Expresso Tradicional",
     labels: [
@@ -26,7 +26,7 @@ export const card = [
     price: 9.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 2,
     img: coffee_2,
     alt: "Café Expresso Americano",
     labels: [
@@ -37,7 +37,7 @@ export const card = [
     price: 8.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 3,
     img: coffee_3,
     alt: "Café Expresso Cremoso",
     labels: [
@@ -48,7 +48,7 @@ export const card = [
     price: 12.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 4,
     img: coffee_4,
     alt: "Café Expresso Gelado",
     labels: [
@@ -60,7 +60,7 @@ export const card = [
     price: 9.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 5,
     img: coffee_5,
     alt: "Café com Leite",
     labels: [
@@ -72,7 +72,7 @@ export const card = [
     price: 11.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 6,
     img: coffee_6,
     alt: "Latte",
     labels: [
@@ -84,7 +84,7 @@ export const card = [
     price: 14.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 7,
     img: coffee_7,
     alt: "Capuccino",
     labels: [
@@ -96,7 +96,7 @@ export const card = [
     price: 15.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 8,
     img: coffee_8,
     alt: "Macchiato",
     labels: [
@@ -108,7 +108,7 @@ export const card = [
     price: 12.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 9,
     img: coffee_9,
     alt: "Mocaccino",
     labels: [
@@ -120,7 +120,7 @@ export const card = [
     price: 14.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 10,
     img: coffee_10,
     alt: "Chocolate Quente",
     labels: [
@@ -132,7 +132,7 @@ export const card = [
     price: 15.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 11,
     img: coffee_11,
     alt: "Cubano",
     labels: [
@@ -145,7 +145,7 @@ export const card = [
     price: 17.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 12,
     img: coffee_12,
     alt: "Havaiano",
     labels: [
@@ -156,7 +156,7 @@ export const card = [
     price: 16.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 13,
     img: coffee_13,
     alt: "Café Árabe",
     labels: [
@@ -167,7 +167,7 @@ export const card = [
     price: 17.90,
   },
   {
-    id: crypto.randomUUID(),
+    id: 14,
     img: coffee_14,
     alt: "Café Irlandês",
     labels: [

@@ -1,6 +1,6 @@
 export function FormShip() {
   return (
-    <form className="grid grid-cols-3 grid-rows-4 gap-4">
+    <form className="grid grid-cols-3 grid-rows-4 gap-4 max-md:flex max-md:flex-col max-md:flex-wrap">
       <input
         type="text"
         name=""

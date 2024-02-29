@@ -5,10 +5,10 @@ import coffe_6 from "../../../assets/coffe_6.png"
 export function ItemsOrder() {
   return (
     <div className="flex flex-col gap-[15px]">
-      <h2 className="font-baloo text-base-subtitle font-bold text-lg">
+      <h2 className="font-baloo text-base-subtitle font-bold text-lg max-[1140px]:text-center">
         Cafés selecionados
       </h2>
-      <div className="bg-base-card p-10 gap-3 rounded-tr-[36px] rounded-bl-[36px] rounded-tl-md rounded-br-md">
+      <div className="bg-base-card p-10 gap-3 rounded-tr-[36px] rounded-bl-[36px] rounded-tl-md rounded-br-md max-[425px]:p-[10px]">
         <div className="flex flex-row gap-[50px]">
           <div className="flex gap-5">
             <img src={coffee_1} alt="Café expresso" className="size-16" />
