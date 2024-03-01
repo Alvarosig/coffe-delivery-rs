@@ -1,7 +1,7 @@
 import { MapPinLine, CurrencyDollar } from "phosphor-react"
 import { FormShip } from "./FormShip/FormShip"
 import { PaymentMethod } from "./PaymentMethod/PaymentMethod"
-import { ItemsOrder } from "./ItemsOrder/ItemsOrder"
+import { OrderList } from "./OrderList/OrderList"
 
 export function FormOrder() {
   return (
@@ -53,7 +53,7 @@ export function FormOrder() {
         </div>
       </div>
 
-      <ItemsOrder/>
+      <OrderList/>
     </div>
   )
 }

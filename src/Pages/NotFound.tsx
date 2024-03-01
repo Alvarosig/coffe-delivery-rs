@@ -4,7 +4,7 @@ import not_found from '../assets/not_found.svg';
 
 export function NotFound() {
   return (
-    <div className="flex flex-row justify-center items-center font-baloo bg-background gap-36 h-dvh max-lg:flex-col-reverse max-lg:gap-20 max-md:px-5">
+    <div className="flex flex-row justify-center items-center font-baloo bg-background gap-36 h-dvh max-lg:flex-col-reverse max-lg:gap-20 max-md:m-14">
       <div className="flex flex-col gap-5">
         <h1 className="text-7xl text-base-title max-md:hidden">404</h1>
         <h2 className="text-5xl text-base-title">Ops...</h2>

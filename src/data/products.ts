@@ -13,7 +13,7 @@ import coffee_12 from '../assets/coffe_12.png'
 import coffee_13 from '../assets/coffe_13.png'
 import coffee_14 from '../assets/coffe_14.png'
 
-export const card = [
+export const defaultProducts = [
   {
     id: 1,
     img: coffee_1,

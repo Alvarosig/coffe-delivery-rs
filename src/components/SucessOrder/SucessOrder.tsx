@@ -71,7 +71,7 @@ export function SucessOrder() {
       <img
         src={delivery}
         alt="Um rapaz andando de moto realizando a entrega do pedido"
-        className="max-md: hidden"
+        className="max-md:hidden"
       />
     </div>
   )

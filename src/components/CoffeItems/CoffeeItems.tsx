@@ -1,4 +1,4 @@
-import { Card } from "./Card/Card"
+import { ProductsList } from "./ProductsList/ProductsList"
 
 export function CoffeeItems() {
   return (
@@ -7,7 +7,7 @@ export function CoffeeItems() {
         Nossos cafés
       </h2>
       <div className="flex flex-wrap gap-x-8 gap-y-10 items-center justify-start">
-        <Card />
+        <ProductsList />
       </div>
     </div>
   )

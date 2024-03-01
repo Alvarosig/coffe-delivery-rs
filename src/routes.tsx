@@ -4,6 +4,7 @@ import { Homepage } from './Pages/Homepage.tsx'
 import { NotFound } from './Pages/NotFound.tsx'
 import { Header } from './components/Header/Header'
 import { Sucess } from './Pages/Sucess.tsx'
+import { CartProvider } from './context/CartContext.tsx'
 
 export function Routes() {
   const location = useLocation()
@@ -11,7 +12,9 @@ export function Routes() {
   const element = useRoutes([
     {
       path: '/',
-      element: <Homepage />,
+      element: (
+        <Homepage />
+      ),
       errorElement: <NotFound />
     },
     {
@@ -34,8 +37,10 @@ export function Routes() {
 
   return (
     <div>
-      {location.pathname !== '/404' && <Header />}
-      {element}
+      <CartProvider>
+        {location.pathname !== '/404' && <Header />}
+        {element}
+      </CartProvider>
     </div>
   )
 }
