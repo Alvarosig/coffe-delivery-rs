@@ -9,7 +9,10 @@ export function OrderList() {
     handleRemoveProductFromCart,
   } = useCart()
 
-  const totalProductValue = cartData.reduce((acc, item) => acc + (item.price * item.quantity), 0)
+  const totalProductValue = cartData.reduce(
+    (acc, item) => acc + item.price * item.quantity,
+    0
+  )
   const shipment = 3.5
   const totalCartValue = totalProductValue + shipment
 
@@ -52,7 +55,10 @@ export function OrderList() {
                         className="font-sans text-purple-normal cursor-pointer hover:text-purple-dark"
                       />
                     </div>
-                    <div className="flex flex-row bg-base-button rounded-md p-2 gap-1 justify-center items-center cursor-pointer hover:bg-base-hover">
+                    <button
+                      type="button"
+                      className="flex flex-row bg-base-button rounded-md p-2 gap-1 justify-center items-center cursor-pointer hover:bg-base-hover"
+                    >
                       <Trash
                         size={16}
                         weight="regular"
@@ -64,7 +70,7 @@ export function OrderList() {
                       >
                         REMOVER
                       </span>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -80,7 +86,9 @@ export function OrderList() {
         <div className="flex flex-col gap-3 font-sans font-normal text-base-text leading-[130%]">
           <div className="flex flex-row items-center justify-between">
             <p className="text-sm">Total de Itens</p>
-            <span className="text-base">{moneyFormatter(totalProductValue)}</span>
+            <span className="text-base">
+              {moneyFormatter(totalProductValue)}
+            </span>
           </div>
           <div className="flex flex-row items-center justify-between">
             <p className="text-sm">Entrega</p>
@@ -88,7 +96,9 @@ export function OrderList() {
           </div>
           <div className="flex flex-row items-center justify-between">
             <p className="font-bold text-xl">Total</p>
-            <span className="font-bold text-xl">{moneyFormatter(totalCartValue)}</span>
+            <span className="font-bold text-xl">
+              {moneyFormatter(totalCartValue)}
+            </span>
           </div>
         </div>
 

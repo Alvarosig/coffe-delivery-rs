@@ -27,26 +27,34 @@ export function Buy({ product }: BuyProps) {
       </div>
       <div className="flex flex-row gap-2">
         <div className="flex flex-row bg-base-button rounded-md w-[72px] p-2 gap-2 justify-center items-center">
-          <Minus
-            size={14}
+          <button
+            type="button"
             onClick={() => handleSubtractProductToCart(product)}
-            weight="bold"
-            className="font-sans text-purple-normal cursor-pointer hover:text-purple-dark"
-          />
+          >
+            <Minus
+              size={14}
+              weight="bold"
+              className="font-sans text-purple-normal cursor-pointer hover:text-purple-dark"
+            />
+          </button>
           <span className="font-sans text-base text-base-title select-none">
             {cartItem ? cartItem.quantity : 0}
           </span>
-          <Plus
-            size={14}
-            onClick={() => handleAddProductToCart(product)}
-            weight="bold"
-            className="font-sans text-purple-normal cursor-pointer hover:text-purple-dark"
-          />
+          <button type="button" onClick={() => handleAddProductToCart(product)}>
+            <Plus
+              size={14}
+              weight="bold"
+              className="font-sans text-purple-normal cursor-pointer hover:text-purple-dark"
+            />
+          </button>
         </div>
         <Link to="/checkout">
-          <div className="flex items-center justify-center size-[38px] p-2 rounded-md bg-purple-dark cursor-pointer hover:bg-purple-normal">
+          <button
+            type="button"
+            className="flex items-center justify-center size-[38px] p-2 rounded-md bg-purple-dark cursor-pointer hover:bg-purple-normal"
+          >
             <ShoppingCart size={19} weight="fill" className="text-base-card" />
-          </div>
+          </button>
         </Link>
       </div>
     </div>
