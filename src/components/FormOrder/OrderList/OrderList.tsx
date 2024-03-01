@@ -35,7 +35,7 @@ export function OrderList() {
                 <div className="flex flex-col gap-2">
                   <p>{item.title}</p>
                   <div className="flex flex-row gap-2">
-                    <div className="flex flex-row bg-base-button rounded-md w-[72px] p-2 gap-2 justify-center items-center">
+                    <div className="flex flex-row bg-base-button rounded-md w-[72px] p-2 gap-2 justify-center items-center select-none">
                       <Minus
                         size={14}
                         onClick={() => handleSubtractProductToCart(item)}

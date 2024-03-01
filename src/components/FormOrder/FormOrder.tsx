@@ -1,10 +1,17 @@
-import { MapPinLine, CurrencyDollar } from "phosphor-react"
+import { MapPinLine, CurrencyDollar, Handbag } from "phosphor-react"
 import { FormShip } from "./FormShip/FormShip"
 import { PaymentMethod } from "./PaymentMethod/PaymentMethod"
 import { OrderList } from "./OrderList/OrderList"
+import { useCart } from "../../context/CartContext"
+import { Link } from "react-router-dom"
 
 export function FormOrder() {
+
+  const { isThereAProduct } = useCart()
+
   return (
+    <>
+   {isThereAProduct.length > 0 ? (
     <div className="max-w-[1440px] px-40 m-auto flex flex-row items-start justify-center gap-8 mb-14 max-[1140px]:flex-col max-[1140px]:items-center max-md:px-5">
       <div className="flex flex-col gap-[15px]">
         <h2 className="font-baloo text-base-subtitle font-bold text-lg max-[1140px]:text-center">
@@ -55,5 +62,17 @@ export function FormOrder() {
 
       <OrderList/>
     </div>
+   ) : 
+   (
+    <div className="max-w-[1440px] px-40 m-auto flex flex-col items-center justify-center pt-32 pb-40 gap-3 max-[425px]:px-3 max-[425px]:text-center max-xl:pt-40">
+      <Handbag size={92} className="text-white p-5 rounded-full bg-yellow-normal"/>
+      <h2 className="font-baloo font-extrabold text-3xl text-base-title">Monte um carrinho de compras!</h2>
+      <p className="font-baloo font-normal text-xl text-base-subtitle">Adicione produtos e tenha desconto no frete.</p>
+      <Link to="/">
+        <button type="button" className="p-4 rounded-full bg-purple-normal text-xl text-base-button hover:bg-purple-dark max-[425px]:w-auto">Conferir produtos</button>
+      </Link>
+    </div>
+   )}
+   </>
   )
 }

@@ -29,12 +29,15 @@ interface ContextData {
   handleAddProductToCart: (item: Product | CartItem) => void
   handleSubtractProductToCart: (item: Product | CartItem) => void
   handleRemoveProductFromCart: (id: number) => void
+  isThereAProduct: CartItem[]
 }
 
 const CartContext = createContext<ContextData>({} as ContextData)
 
 function CartProvider({ children }: CartProviderProps) {
   const [cartData, setCartData] = useState<CartItem[]>([])
+
+  const isThereAProduct = cartData.filter((item) => item.quantity > 0)
 
   function handleAddProductToCart(item: Product | CartItem) {
     const updatedCartData = [...cartData]
@@ -86,7 +89,8 @@ function CartProvider({ children }: CartProviderProps) {
     products,
     handleAddProductToCart,
     handleSubtractProductToCart,
-    handleRemoveProductFromCart
+    handleRemoveProductFromCart,
+    isThereAProduct
   }
 
   return (

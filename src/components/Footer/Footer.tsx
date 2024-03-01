@@ -16,10 +16,10 @@ export function Footer() {
               </h3>
             </div>
             <p className="text-lg">
-              O CoffeDelivery é um sucesso brasileiro! Nós oferecemos uma
-              variedade de cafés de alta qualidade, entregues diretamente na sua
-              porta. Experimente nossos serviços e descubra a diferença que o
-              CoffeDelivery pode fazer no seu dia a dia!☕
+              O CoffeDelivery é um sucesso brasileiro! Oferecemos uma
+              variedade de cafés de alta qualidade, entregues na sua
+              porta. Experimente e descubra a diferença que o
+              CoffeDelivery faz no seu dia a dia!☕
             </p>
           </div>
         </div>
