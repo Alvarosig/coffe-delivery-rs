@@ -31,7 +31,7 @@ export function OrderList() {
 
       <div className="bg-base-card p-10 gap-3 rounded-tr-[36px] rounded-bl-[36px] rounded-tl-md rounded-br-md max-[425px]:p-[10px]">
         {cartData.map((item) => (
-          <>
+          <div key={item.id}>
             <div className="flex flex-row gap-[50px]">
               <div className="flex gap-5">
                 <img src={item.img} alt="Café expresso" className="size-16" />
@@ -80,7 +80,7 @@ export function OrderList() {
               </h3>
             </div>
             <hr className="h-px bg-base-button border-0 my-6" />
-          </>
+          </div>
         ))}
 
         <div className="flex flex-col gap-3 font-sans font-normal text-base-text leading-[130%]">

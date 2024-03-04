@@ -8,7 +8,7 @@ export function ProductsList() {
     <div className="flex flex-wrap gap-x-8 gap-y-10 mb-14 max-lg:justify-center">
       {products.map((product) => {
         return (
-          <ProductItem product={product}/>
+          <ProductItem key={product.id} product={product}/>
         )
       })}
     </div>

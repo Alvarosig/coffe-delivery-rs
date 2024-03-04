@@ -5,6 +5,7 @@ import { NotFound } from './Pages/NotFound.tsx'
 import { Header } from './components/Header/Header'
 import { Sucess } from './Pages/Sucess.tsx'
 import { CartProvider } from './context/CartContext.tsx'
+import { OrderProvider } from './context/OrderContext.tsx'
 
 export function Routes() {
   const location = useLocation()
@@ -33,14 +34,16 @@ export function Routes() {
       path: '*',
       element: <Navigate to="/404" replace />
     }
-  ]);
+  ])
 
   return (
-    <div>
+    <>
       <CartProvider>
+      <OrderProvider>
         {location.pathname !== '/404' && <Header />}
         {element}
+      </OrderProvider>
       </CartProvider>
-    </div>
+    </>
   )
 }
