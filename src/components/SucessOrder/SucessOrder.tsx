@@ -1,7 +1,16 @@
-import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
+import { CurrencyDollar, MapPin, Timer } from "phosphor-react"
 import delivery from '../../assets/delivery.svg'
+import { useOrder } from "../../context/OrderContext"
+import { Navigate, useLocation } from "react-router-dom";
 
 export function SucessOrder() {
+  const { order } = useOrder()
+  const location = useLocation();
+
+  if (!order && location.pathname === '/checkout/sucess') {
+    return <Navigate to="/404" replace />;
+  }
+
   return (
     <div className="flex flex-row justify-between items-center mt-20 max-[1180px]:flex-col max-[1180px]:gap-10 max-[1180px]:my-20">
       <div className="flex flex-col gap-10">
@@ -27,10 +36,10 @@ export function SucessOrder() {
               <p className="font-normal text-base text-base-text">
                 Entrega em{" "}
                 <span className="font-bold text-base text-base-text">
-                  Rua Oscar Guimarães Pinto, 40
+                  {order?.rua}
                 </span>
               </p>
-              <p className="inline-block">Laguna - Santa Catarina, SC</p>
+              <p className="inline-block">{order?.cidade}, {order?.uf}</p>
             </div>
           </div>
 
@@ -61,7 +70,7 @@ export function SucessOrder() {
                 Pagamento na entrega
               </p>
               <span className="font-bold text-base text-base-text">
-                Cartão de Crédito
+                {order?.metodo}
               </span>
             </div>
           </div>
